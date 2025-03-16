@@ -1,0 +1,96 @@
+.comportamiento-page {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  }
+  
+  .comportamiento-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .cuadrantes {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas grandes */
+    grid-template-rows: auto auto; /* Ajusta la altura automáticamente */
+    gap: 20px;
+  }
+  
+  .cuadrante {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px;
+  }
+  
+  .cuadrante h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #444;
+    font-weight: bold;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card.ingresos {
+    background-color: #e6f7f1; /* Verde claro */
+    color: #2e7d32; /* Verde oscuro */
+  }
+  
+  .card.egresos {
+    background-color: #fdecea; /* Rojo claro */
+    color: #c62828; /* Rojo oscuro */
+  }
+  
+  .card.saldo {
+    background-color: #e3f2fd; /* Azul claro */
+    color: #1565c0; /* Azul oscuro */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Levanta ligeramente la tarjeta */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+  }
+  
+  /* Responsividad: Apilar cuadrantes verticalmente en dispositivos móviles */
+  @media (max-width: 768px) {
+    .cuadrantes {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+      grid-template-rows: auto; /* Ajusta automáticamente la altura */
+      gap: 20px;
+    }
+  
+    .cards {
+      flex-direction: column; /* Apilar las tarjetas verticalmente */
+      gap: 10px; /* Menor espacio entre tarjetas */
+    }
+  }
+  

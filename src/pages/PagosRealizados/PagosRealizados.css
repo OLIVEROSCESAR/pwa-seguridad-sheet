@@ -1,0 +1,60 @@
+.pagos-realizados {
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo claro */
+    min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+  }
+  
+  .pagos-realizados h1 {
+    text-align: center;
+    color: #333; /* Texto gris oscuro */
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 600; /* Más grueso para destacar */
+  }
+  
+  .filtros {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta automáticamente los elementos en pantallas pequeñas */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .filtros label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    align-items: center; /* Centra los elementos dentro del filtro */
+  }
+  
+  .filtros select,
+  .filtros input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 5px;
+    width: 200px;
+    background-color: #fefefe;
+    transition: all 0.3s ease; /* Suave animación al interactuar */
+  }
+  
+  .filtros select:focus,
+  .filtros input:focus {
+    outline: none;
+    border-color: #0056b3; /* Azul oscuro al seleccionar */
+    box-shadow: 0 0 4px rgba(0, 86, 179, 0.2);
+  }
+  
+  .filtros input::placeholder {
+    color: #aaa; /* Color gris claro para el placeholder */
+  }
+  

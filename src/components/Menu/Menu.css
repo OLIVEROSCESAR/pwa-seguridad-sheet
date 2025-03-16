@@ -1,0 +1,126 @@
+/* Contenedor del menú */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0056b3; /* Azul moderno */
+  color: white;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+/* Ocultar el checkbox */
+#menu-toggle {
+  display: none; /* El checkbox no será visible */
+}
+
+/* Icono del menú tipo hamburguesa */
+.menu-icon {
+  display: none; /* Oculto por defecto */
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 25px;
+  z-index: 1100;
+}
+
+.menu-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 3px;
+  transition: all 0.3s ease; /* Animación al interactuar */
+}
+
+/* Estilos para las opciones del menú */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #0056b3; /* Azul moderno */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  padding-top: 60px;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Mostrar el menú al activar el checkbox */
+#menu-toggle:checked ~ .menu-items {
+  left: 0; /* Menú visible */
+}
+
+/* Opciones del menú */
+.menu-items li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.menu-items li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: all 0.3s ease; /* Efecto suave al pasar el cursor */
+}
+
+.menu-items li a i {
+  margin-right: 10px; /* Espacio entre icono y texto */
+  font-size: 20px; /* Tamaño del ícono */
+}
+
+.menu-items li a:hover {
+  background-color: #004494; /* Azul más oscuro al hacer hover */
+  transform: translateX(5px); /* Mover ligeramente al hacer hover */
+}
+
+/* Muestra el icono de hamburguesa en dispositivos móviles */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Visible en pantallas pequeñas */
+  }
+
+  .menu-items {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+}
+
+/* Mantiene las opciones alineadas horizontalmente en pantallas grandes */
+@media (min-width: 769px) {
+  .menu-items {
+    position: static;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+    height: auto;
+    padding: 440;
+  }
+
+  .menu-items li {
+    margin: 0 15px;
+  }
+
+  .menu-items li a {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: transparent;
+  }
+
+  .menu-items li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: none;
+  }
+}

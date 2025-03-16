@@ -1,0 +1,45 @@
+.comparativo {
+    text-align: center;
+  }
+  
+  .comparativo-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card.afiliacion-actual {
+    background-color: #e3f2fd; /* Azul claro */
+    color: #1565c0; /* Azul oscuro */
+  }
+  
+  .card.afiliacion-anterior {
+    background-color: #fdecea; /* Rojo claro */
+    color: #c62828; /* Rojo oscuro */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  

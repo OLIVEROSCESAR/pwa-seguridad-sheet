@@ -1,0 +1,41 @@
+.tabla-pagos {
+  width: 100%;
+  border-collapse: collapse; /* Asegura que no haya espacios entre las celdas */
+  margin: 20px 0;
+  background-color: white;
+}
+
+.tabla-pagos th,
+.tabla-pagos td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.tabla-pagos th {
+  background-color: #0056b3; /* Azul oscuro */
+  color: white;
+  font-weight: bold;
+}
+
+/* Alternar colores de fondo en filas pares */
+.tabla-pagos tr:nth-child(even) {
+  background-color: #f8f8f8; /* Fondo gris claro alternado */
+}
+
+/* Resaltar fila al pasar el cursor */
+.tabla-pagos tr:hover {
+  background-color: #e6f7ff; /* Fondo azul claro */
+}
+
+/* Aplicar estilos personalizados a filas negativas */
+.tabla-pagos tr.row-negative {
+  background-color: #f8d7da !important; /* Fondo rojo claro */
+  color: #721c24 !important; /* Texto rojo oscuro */
+  font-weight: bold;
+}
+
+/* Prioridad elevada para forzar el color de fondo */
+.tabla-pagos tr.row-negative td {
+  background-color: #f8d7da !important; /* Fondo rojo claro */
+}
