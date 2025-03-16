@@ -7,8 +7,9 @@ import Administracion from "./pages/Administracion/Administracion";
 import "./App.css"; // Importar los estilos globales si los tienes
 
 const App = () => {
+  const basename = "/pwa-seguridad-sheet"; // Ruta base del repositorio
   return (
-    <Router>
+    <Router basename={basename}>
       {/* Integración del menú y configuración de rutas */}
       <div className="app">
         <Menu /> {/* Menú tipo hamburguesa moderno */}
