@@ -11,5 +11,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-serviceWorkerRegistration.register(); // Si estás usando service workers, mantén esta línea
+serviceWorkerRegistration.register();
