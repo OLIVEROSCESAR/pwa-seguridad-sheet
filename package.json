@@ -2,7 +2,7 @@
   "name": "pwa-seguridad-sheet",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://OLIVEROSCESAR.github.io/SeguridadApp",
+  "homepage": "https://oliveroscesar.github.io/pwa-seguridad-sheet",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@testing-library/dom": "^10.4.0",
